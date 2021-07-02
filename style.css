@@ -12,7 +12,9 @@ body{
     background-color: teal;
     text-align: center;
 }
-
+main{
+    margin-top: 5vh;
+}
 #clock{
     position: relative;
     margin: auto;
@@ -58,8 +60,13 @@ button{
     margin-left: 10px;
     font-size: 2.2rem;
     border: none;
-    color: black;
     background-color: white;
+}
+#btn-1, #btn-2{
+    display: inline-block;
+}
+#btn-3, #btn-4{
+    display: none;
 }
 @media screen and (max-width: 475px){
    img{
