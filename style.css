@@ -29,11 +29,11 @@ img{
 #timer{
     width: 190px;
     height: 190px;
-    background-color: white;
+    background-color: red;
     border-radius: 50%;
     position: absolute;
-    top: 120px;
-    left: 100px;
+    top: 125px;
+    left: 102.5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,8 +79,8 @@ button{
        width: 320px;
    }
    #timer{
-       width: 150px;
-       height: 150px;
+       width: 155px;
+       height: 155px;
        left: 80px;
        top: 100px;
    }
