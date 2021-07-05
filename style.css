@@ -1,3 +1,5 @@
+/* Geral */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,12 +11,14 @@ html{
 }
 body{
     font-size: 1.6rem;
-    background-color: teal;
+    background-color: rgb(125, 180, 180);
     text-align: center;
 }
 main{
     margin-top: 5vh;
 }
+/* Relógio */
+
 #clock{
     position: relative;
     margin: auto;
@@ -29,7 +33,9 @@ img{
 #timer{
     width: 190px;
     height: 190px;
-    background-color: teal;
+    background: linear-gradient(-45deg, #20e36e, #34c2cc, #2dd6b8, #1cdf84) no-repeat;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out  infinite ;
     border-radius: 50%;
     position: absolute;
     top: 125px;
@@ -42,16 +48,25 @@ img{
 h1{
     font-size: 2.8rem;
     margin-top: 20px;
-    color: white;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/* Título */
+
 h2{
+    text-shadow: 1.5px 1.5px 2px black;
     color: white;
     font-size: 2.6rem;
 }
-h3{
+/* Créditos */
+
+footer h3{
+    margin-top: 15px;
     font-size: 1.6rem;
     color: white;
 }
+/* Botões */
+
 #info{
     margin-top: 20px;
 }
@@ -63,7 +78,9 @@ button{
     border: none;
     border-radius: 50%;
     padding: 5px;
-    background-color: white;
+    color: black;
+    background-color: rgba(0, 0, 0, .0);
+    animation: surgir .9s linear forwards;
 }
 #btn-1, #btn-2{
     display: inline-block;
@@ -71,6 +88,30 @@ button{
 #btn-3, #btn-4{
     display: none;
 }
+/* Voltas */
+
+ul{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 90%;
+    color: teal;
+}
+li{
+    background: linear-gradient(-45deg, #20e36e, #34c2cc, #2dd6b8, #1cdf84) no-repeat;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: black;
+    font-weight: 900;
+    padding: 8px 4px;
+}
+/* Medias */
+
 @media screen and (max-width: 475px){
    img{
        width: 400px;
@@ -90,4 +131,29 @@ button{
    main{
        overflow: auto;
    }
+}
+/* Animações */
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@keyframes surgir{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
 }
