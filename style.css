@@ -11,7 +11,7 @@ html{
 }
 body{
     font-size: 1.6rem;
-    background-color: rgb(125, 180, 180);
+    background: linear-gradient(to right, #1b666b, #1c8673);
     text-align: center;
 }
 main{
@@ -30,12 +30,13 @@ main{
 img{
     width: 500px;
 }
-#timer{
+.timer{
     width: 190px;
     height: 190px;
     background: linear-gradient(-45deg, #20e36e, #34c2cc, #2dd6b8, #1cdf84) no-repeat;
     background-size: 300% 300%;
-    animation: gradient 5s ease-in-out  infinite ;
+    animation: none;
+    animation: gradient 0s ease-in-out  infinite  alternate-reverse;
     border-radius: 50%;
     position: absolute;
     top: 125px;
@@ -44,6 +45,9 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.timer.pause{
+    background: rgb(206, 62, 62);
 }
 h1{
     font-size: 2.8rem;
@@ -102,8 +106,8 @@ ul{
 }
 li{
     background: linear-gradient(-45deg, #20e36e, #34c2cc, #2dd6b8, #1cdf84) no-repeat;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 10px;
     font-size: 2rem;
     color: black;
