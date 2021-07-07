@@ -116,7 +116,7 @@ li{
 }
 /* Medias */
 
-@media screen and (max-width: 475px){
+@media screen and (max-width: 495px){
    img{
        width: 400px;
    }
@@ -126,7 +126,7 @@ li{
    #clock{
        width: 320px;
    }
-   #timer{
+   .timer{
        width: 155px;
        height: 155px;
        left: 80px;
